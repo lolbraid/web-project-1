@@ -1,0 +1,119 @@
+/* EDIT ON BOOTSTRAP 5 CSS */
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 1.6s;
+}
+
+/* OWN CSS */
+.carousel-title {
+  z-index: 1;
+  top: 30px;
+  padding-top: 10px;
+  background-color: rgb(51, 42, 4);
+  color: rgb(218, 214, 199);
+  height: 50px;
+  width: 150px;
+}
+.carousel-copyright {
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.719);
+  background-color: transparent;
+}
+.slider-down {
+  bottom: 170px;
+  height: 200px;
+}
+.by-images-left {
+  height: 130px;
+  width: 240px;
+  font-size: 12px;
+  z-index: 2;
+  padding-left: 15px;
+}
+.by-images-left p {
+  color: rgba(255, 255, 255, 0.719);
+}
+.by-images-left img {
+  height: 64px;
+}
+.on-slides-right {
+  color: rgb(218, 214, 199);
+  z-index: 2;
+  width: 400px;
+  padding: 15px;
+  padding-right: 10px;
+  animation-name: no-op;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes no-op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main {
+  z-index: 1;
+  background-color: #716844;
+  bottom: 200px;
+  box-shadow: 0 -100px 150px 1px black;
+}
+.main p {
+  color: #ede6cb;
+}
+.gold-btn {
+  color: #ada277 !important;
+  background-color: #2b2510 !important;
+  font-size: 18px;
+  border-radius: 0;
+}
+.gold-btn:hover {
+  transition: background-color 1s ease-in-out;
+  background-color: #110f06 !important;
+}
+.cards-con {
+  margin-top: -170px;
+}
+.card {
+  border: none;
+  max-width: 228px;
+  padding: 15px;
+  animation-name: no-op;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+/* مش كامل */
+@media (max-width: 400px) {
+    .on-slides-right {
+        width: 100px;
+    }
+    .by-images-left{
+        visibility: hidden;
+    }
+}
+.footer-1 {
+  background-color: #716844;
+  color: #ede6cb;
+}
+form {
+  width: 30% !important;
+}
+form input {
+  border-radius: 0 !important;
+}
+footer {
+    height: 80px;
+}
+footer a img {
+    height: 34px;
+}
